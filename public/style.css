@@ -1,0 +1,45 @@
+body {
+  margin: 40px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 200px 800px auto;
+    grid-template-rows: 80px 100px 400px 80px;
+    }
+
+    .box {
+        background-color: aliceblue;
+        color: midnightblue;
+        border-radius: 5px;
+        font-size: 150%;
+        border: 2px solid black;
+    }
+
+    .title {
+        grid-column: 2 / 4;
+        grid-row: 1;
+    }
+
+    .leftTop {
+        grid-column: 2 / 3 ;
+        grid-row: 2;
+    }
+
+    .leftBottom{
+      grid-column: 2 / 3 ;
+      grid-row: 3;
+    }
+
+    .right {
+        grid-column: 3 / 4 ;
+        grid-row: 2/4;
+        overflow-y: auto;
+    }
+
+    .bottom {
+        grid-column: 2 / 4;
+        grid-row: 4;
+    }
+}
